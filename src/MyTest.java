@@ -42,5 +42,6 @@ public class MyTest {
         assertEquals(false, student.hasNoPenalty());
     }
 
+
 }
 

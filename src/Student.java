@@ -57,6 +57,7 @@ public class Student {
         return this.getPenalty()>=3;
     }
     public boolean isMember(){
+
         return isMember;
     }
 }
