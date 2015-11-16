@@ -38,6 +38,8 @@ public class Book {
         this.bookName = bookName;
     }
     public String whoLoanedTheBook(Book b){
-        return null;
+        String name = b.getStudent().getStudent();
+
+        return name;
     }
 }

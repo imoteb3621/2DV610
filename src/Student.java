@@ -54,7 +54,7 @@ public class Student {
 
     public boolean hasNoPenalty(){
 
-        return this.getPenalty()>=3;
+        return this.getPenalty()<=3;
     }
     public boolean isMember(){
 

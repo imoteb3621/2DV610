@@ -39,7 +39,7 @@ public class MyTest {
     public void testPenalty(){
         Student student = new Student();
         student.setPenalty(2);
-        assertEquals(false, student.hasNoPenalty());
+        assertEquals(true, student.hasNoPenalty());
     }
     @Test
     public void testMember(){
@@ -52,7 +52,9 @@ public class MyTest {
         Book book = new Book();
         Student student = new Student();
         student.setStudent("Taner");
+        student.setUniversity("Linneaus University");
         book.setStudent(student);
+
         assertEquals("Taner", book.whoLoanedTheBook(book));
     }
 
