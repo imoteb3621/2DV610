@@ -11,7 +11,15 @@ public class Book {
     }
 
     public void setStudent(Student student) {
-
+        if(student.isMember()){
+            if(student.hasNoPenalty()){
+                this.student = student;
+            }else{
+                throw new IllegalArgumentException("You have penalties");
+            }
+        }else{
+            throw new IllegalArgumentException("You are not member");
+        }
     }
 
     public String getIBSNnumber() {
