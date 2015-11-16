@@ -37,7 +37,8 @@ public class Book {
     public void setBookName(String bookName) {
         this.bookName = bookName;
     }
-    public String whoLoanedTheBook(Book b){
+    public String loanedBy(Book b){
+
         String name = b.getStudent().getStudent();
 
         return name;

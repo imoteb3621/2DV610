@@ -1,10 +1,9 @@
 /**
  * @author taner on 2015-11-16.
  */
-import junit.framework.*;
 import org.junit.Before;
 import org.junit.Test;
-import org.junit.*;
+
 import static org.junit.Assert.*;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
@@ -55,7 +54,7 @@ public class MyTest {
         student.setUniversity("Linneaus University");
         book.setStudent(student);
 
-        assertEquals("Taner", book.whoLoanedTheBook(book));
+        assertEquals("Taner", book.loanedBy(book));
     }
 
 }
