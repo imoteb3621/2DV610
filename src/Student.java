@@ -5,43 +5,43 @@
  * @author taner on 2015-11-16.
  */
 public class Student {
-    public String universityName;
-    public String studentName;
-    public int studentAge;
-    public int studentId;
+    public String university;
+    public String student;
+    public int age;
+    public int id;
     public int penalty;
     public boolean isMember;
 
-    public String getUniversityName() {
-        return universityName;
+    public String getUniversity() {
+        return university;
     }
 
-    public void setUniversityName(String universityName) {
-        this.universityName = universityName;
+    public void setUniversity(String university) {
+        this.university = university;
     }
 
-    public String getStudentName() {
-        return studentName;
+    public String getStudent() {
+        return student;
     }
 
-    public void setStudentName(String studentName) {
-        this.studentName = studentName;
+    public void setStudent(String student) {
+        this.student = student;
     }
 
-    public int getStudentAge() {
-        return studentAge;
+    public int getAge() {
+        return age;
     }
 
-    public void setStudentAge(int studentAge) {
-        this.studentAge = studentAge;
+    public void setAge(int age) {
+        this.age = age;
     }
 
-    public int getStudentId() {
-        return studentId;
+    public int getId() {
+        return id;
     }
 
-    public void setStudentId(int studentId) {
-        this.studentId = studentId;
+    public void setId(int id) {
+        this.id = id;
     }
 
     public int getPenalty() {

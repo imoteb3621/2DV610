@@ -3,10 +3,10 @@
  */
 import org.junit.Before;
 import org.junit.Test;
-import static org.junit.Assert.*;
+
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
-import static org.mockito.Mockito.*;
+
 public class MyTest {
     private Student validStudent;
     private Student notValidStudent;
@@ -25,7 +25,7 @@ public class MyTest {
         when(validStudent.isMember()).thenReturn(true);
         when(validStudent.hasNoPenalty()).thenReturn(true);
         book.setBookName("Java Fundamentals");
-        book.setIBSNnumber("123456");
+        book.setIBSN("123456");
 
     }
     @Test(expected = IllegalArgumentException.class)
