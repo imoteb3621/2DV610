@@ -39,7 +39,7 @@ public class MyTest {
     public void testPenalty(){
         Student student = new Student();
         student.setPenalty(2);
-        assertEquals(true, student.hasNoPenalty());
+        assertEquals(false, student.hasNoPenalty());
     }
 
 }
