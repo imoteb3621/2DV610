@@ -11,7 +11,7 @@ public class Student {
     public int id;
     public int penalty;
     public boolean isMember;
-
+    public boolean hasNoPenalty;
     public String getUniversity() {
         return university;
     }
@@ -53,11 +53,7 @@ public class Student {
     }
 
     public boolean hasNoPenalty(){
-        if(this.penalty>=3){
-            return false;
-        }else {
-            return true;
-        }
+        return hasNoPenalty;
     }
     public boolean isMember(){
         return isMember;
