@@ -47,6 +47,14 @@ public class MyTest {
         student.setUniversity("Linneaus University");
         assertEquals(true, student.isMember());
     }
+    @Test
+    public void testWhoLoanedTheBook(){
+        Book book = new Book();
+        Student student = new Student();
+        student.setStudent("Taner");
+        book.setStudent(student);
+        assertEquals("Taner", book.whoLoanedTheBook(book));
+    }
 
 }
 
