@@ -53,12 +53,8 @@ public class Student {
     }
 
     public boolean hasNoPenalty(){
-        if(this.getPenalty()>=3){
-            hasPenalty = true;
-        }else{
-            hasPenalty=false;
-        }
-        return hasPenalty;
+
+        return this.getPenalty()>=3;
     }
     public boolean isMember(){
         return isMember;
