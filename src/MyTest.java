@@ -41,7 +41,12 @@ public class MyTest {
         student.setPenalty(2);
         assertEquals(false, student.hasNoPenalty());
     }
-
+    @Test
+    public void testMember(){
+        Student student = new Student();
+        student.setUniversity("Linneaus University");
+        assertEquals(true, student.isMember());
+    }
 
 }
 
