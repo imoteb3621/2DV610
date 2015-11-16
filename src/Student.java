@@ -57,7 +57,11 @@ public class Student {
         return this.getPenalty()>=3;
     }
     public boolean isMember(){
-
+        if(this.getUniversity() == "Linneaus University"){
+            isMember=true;
+        }else{
+            isMember=false;
+        }
         return isMember;
     }
 }
